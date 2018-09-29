@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>宠物_宠物中心_宠物介绍_宠物领养-云宠</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="宠物,猫,猫咪,宠物狗,宠物猫,宠物领养,宠物图片,宠物视频" />
+		<mate name="description" content="宠物_宠物中心_宠物介绍_宠物领养-云宠" />
+
+		<script>
+			(function() {
+				var bp = document.createElement('script');
+				var curProtocol = window.location.protocol.split(':')[0];
+				if(curProtocol === 'https') {
+					bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+				} else {
+					bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+				}
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(bp, s);
+			})();
+		</script>
+
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?492dbfbc52c6bb44a1856d4b77ed6a44";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+
+		<link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="../../css/style.css" type="text/css" media="all" />
+		<link href="../../css/hover.css" rel="stylesheet" media="all">
+		<script src="../../js/jquery.min.js"></script>
+		<script src="../../js/vue.js"></script>
+		<script src="detail.js"></script>
+	</head>
+
+	<body>
+		<!--header-->
+		<div class="header">
+			<div class="header-info">
+				<div class="container">
+					<!--<div class="logo">
+						<a href="index.html"><img src="../../img/logo.png" alt="" /></a>
+					</div>
+					<div class="search-box">
+						<form>
+							<input type="text" name="s" class="textbox" placeholder="Search" required="">
+							<input type="submit" value="">
+						</form>
+					</div>-->
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header-bottom">
+				<div class="menu">
+					<span class="menu-info"> </span>
+					<ul class="cl-effect-21">
+						<li>
+							<a href="../../index.html">首页</a>
+						</li>
+						<li>
+							<a href="science.html" class="active">宠物介绍</a>
+						</li>
+						<li>
+							<a href="../contact/contact.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+				<!--script-nav -->
+				<script>
+					$("span.menu-info").click(function() {
+						$("ul.cl-effect-21").slideToggle("slow", function() {});
+					});
+				</script>
+				<!-- /script-nav -->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--/header-->
+		<!--about-->
+		<div class="about">
+			<div class="container">
+				<div class="about-top">
+					<div class="about-top-info" id="app">
+						<h3>宠物详情</h3>
+						<div class="col-md-4 about-img">
+							<img v-bind:src="(image)" alt="" />
+						</div>
+						<div class="about-desc">
+							<p>
+								<span v-for="(value, key) in object">{{key}}{{value}}</span>
+							</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--footer-->
+		<div class="footer">
+			<div class="container">
+				<div align="left">
+					<p>友情链接：
+						<a href="http://www.rundol.com/tools/index.html" target="_Blank">md5加密</a>&nbsp;&nbsp;
+						<a href="http://www.rundol.com/tools/web/base64/base64.html" target="_Blank">base64解密</a>&nbsp;&nbsp;
+						<a href="http://www.rundol.com/tools/web/cardNo/cardNo.html" target="_Blank">身份证识别</a>&nbsp;&nbsp;
+					</p>
+				</div>
+				<div class="copy-rights">
+					<p>Copyright &copy; 2019.Company name All rights reserved</p>
+				</div>
+			</div>
+		</div>
+		<!--/footer-->
+	</body>
+
+</html>
